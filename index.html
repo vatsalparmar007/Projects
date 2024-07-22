@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card mt-4 mx-auto shadow-sm" style="max-width: 24rem;">
+        <div class="card-img-top overflow-hidden rounded-top">
+            <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image" class="w-100">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-primary">
+               <strong>Score Keeper</strong> 
+            </h5>
+            <p class="card-text">
+                <h1 class="display-5"> <span id="p1score">0</span> <span> to </span> <span id="p2score">0</span> </h1>
+            </p>
+        </div>
+        <div class="card-body">
+            <select name="" id="playto" class="form-select mb-3">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+            </select>
+            <div class="d-flex justify-content-between">
+                <button onclick="incrementButton()" id="p1button" class="btn btn-dark">
+                    +1 Player One
+                </button>
+                <button onclick="incrementButton2()" id="p2button" class="btn btn-dark">
+                    +1 Player Two
+                </button>
+                <button onclick="resetButton()" id="reset" class="btn btn-dark">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
